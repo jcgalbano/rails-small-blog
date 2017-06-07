@@ -9,40 +9,42 @@
   </head>
 
   <body>
-
-    <strong><a href="#"><%= link_to "Dummy Logo", "/"%></a></strong>
-
-    <div>
-      <ul>
-
-        <li>
-          <a href="#"><%= link_to "Home", "/"%></a>
-        </li>
-        <li>
-          <a href="#"><%= link_to "About", "/about/"%></a>
-        </li>
-        <li>
-          <a href="#"><%= link_to "Help", "/help/"%></a>
-        </li>
     
-      </ul>
-      
-      <ul>
-        <li>
-          <a href="#"><%= link_to "Articles", "/articles/" %></a>
-        </li>
- 
-        <li>
-          <a href="#"><%= link_to "Create Post", "/articles/new/"%></a>
-        </li>
+   <div class="container"> 
+    <header class="navbar navbar-fixed-top"> 
+        <nav>
+          <ul class="nav navbar-nav navbar">
 
-      </ul>
-      
+            <li class="nav-item">
+              <a href="#" class="nav-link"><%= link_to "Home", "/"%></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><%= link_to "About", "/about/"%></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" ><%= link_to "Help", "/help/"%></a>
+            </li>
+        
+          </ul>
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item">
+              <a href="#" class="nav-link" ><%= link_to "Articles", "/articles/" %></a>
+            </li>
+     
+            <li>
+              <a href="#" class="nav-link" ><%= link_to "Create Post", "/articles/new/"%></a>
+            </li>
 
-      <div class="site-content"> 
+          </ul>
+        
+        </nav>
+      </div>
+    </header>  
+    </div>
+      <div class="container site-content"> 
         <%= yield %> 
       </div>
-  
   </body>
 
 </html>
