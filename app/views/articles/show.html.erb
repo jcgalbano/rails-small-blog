@@ -7,3 +7,10 @@
   <strong>Text:</strong>
   <%= @article.text%>
 </p>
+
+<button>
+  <a href="#">Edit</a>
+</button>
+<button>
+  <a href="#"><%= link_to "Delete", '', method: :delete, data: { confirm: 'Are you sure?'} %></a>
+</button>
