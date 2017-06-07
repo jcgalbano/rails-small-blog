@@ -1,11 +1,18 @@
 <h1>Welcome to the Articles Page</h1>
 <p> This file lives in /app/views/articles/index.html.erb/</p><br>
 <% @articles.each do |article|%>
-  <strong>Title: </strong>
-  
-  <a href="#"><%= link_to article[:title], '/articles/'+ article[:id].to_s %></a> 
-  
-  <br>
-  <strong>Text: </strong>
-  <%= article[:text]%><br><br>
+  <div class='article-box'>
+
+    <strong>Title: </strong>
+    <a href="#"><%= link_to article[:title], '/articles/'+ article[:id].to_s %></a> 
+    
+    <br>
+
+    <strong>Text: </strong>
+    <%= article[:text]%>
+
+  </div>
+
+  <br><br>
+
 <%end%>

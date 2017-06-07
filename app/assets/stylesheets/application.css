@@ -13,3 +13,29 @@
  *= require_tree .
  *= require_self
  */
+
+h1{
+  font-family: helvetica;
+}
+p{
+  font-family: Garamond;
+  font-size: 1.3em;
+}
+.article-box{
+  border-style:solid;
+  border-radius:10px; 
+  padding:10px; 
+}
+.site-content{
+  display:block;
+}
+.new-post input{
+  width:150px;
+  border-style:double;
+  border-radius:3px;
+}
+.new-post textarea{
+  height:300px;
+  width:300px;
+  border-radius:5px;
+}
