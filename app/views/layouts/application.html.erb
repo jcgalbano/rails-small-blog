@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SmallBlog</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <strong><a href="#"><%= link_to "Dummy Logo", "/"%></a></strong>
+
+    <div>
+      <ul>
+
+        <li>
+          <a href="#"><%= link_to "Home", "/"%></a>
+        </li>
+        <li>
+          <a href="#"><%= link_to "Articles", "/articles/" %></a>
+        </li>
+        <li>
+          <a href="#"><%= link_to "Help", "/help/"%></a>
+        </li>
+        <li>
+          <a href="#"><%= link_to "About", "/about/"%></a>
+        </li>
+     
+      </ul>
+      
+      <ul>
+        <li>
+          <a href="#"><%= link_to "Create Post", "/articles/new/"%></a>
+        </li>
+      </ul>
+ 
+      <%= yield %> 
+  
+  </body>
+
+</html>
