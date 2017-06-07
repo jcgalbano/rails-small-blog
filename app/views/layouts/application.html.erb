@@ -19,21 +19,23 @@
           <a href="#"><%= link_to "Home", "/"%></a>
         </li>
         <li>
-          <a href="#"><%= link_to "Articles", "/articles/" %></a>
+          <a href="#"><%= link_to "About", "/about/"%></a>
         </li>
         <li>
           <a href="#"><%= link_to "Help", "/help/"%></a>
         </li>
-        <li>
-          <a href="#"><%= link_to "About", "/about/"%></a>
-        </li>
-     
+    
       </ul>
       
       <ul>
         <li>
+          <a href="#"><%= link_to "Articles", "/articles/" %></a>
+        </li>
+ 
+        <li>
           <a href="#"><%= link_to "Create Post", "/articles/new/"%></a>
         </li>
+
       </ul>
  
       <%= yield %> 

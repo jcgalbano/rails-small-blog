@@ -1,11 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A lightweight small-blog project dedicated to the self-improvement of the programmer(s) involved in RoR
 
-Things you may want to cover:
-
-* Ruby version
+* Ruby version 2.4.0
 
 * System dependencies
 
