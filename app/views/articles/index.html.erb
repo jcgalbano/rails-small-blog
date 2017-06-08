@@ -6,12 +6,17 @@
   <div class='article-box'>
 
     <strong>Title: </strong>
-    <a href="#"><%= link_to article[:title], '/articles/'+ article[:id].to_s %></a> 
+    <%= article[:title]%> 
     
     <br>
 
     <strong>Text: </strong>
     <%= article[:text]%>
+
+    <br>
+    <button class="btn btn-secondary">
+      <%= link_to "View", '/articles/'+ article[:id].to_s%> 
+    </button>
 
   </div>
 

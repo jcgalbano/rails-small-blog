@@ -8,9 +8,9 @@
   <%= @article.text%>
 </p>
 
-<button>
-  <a href="#">Edit</a>
+<button type="button" class="btn btn-secondary">
+  <%= link_to "Edit", @article.id.to_s + "/edit/"%> 
 </button>
-<button>
-  <a href="#"><%= link_to "Delete", '', method: :delete, data: { confirm: 'Are you sure?'} %></a>
+<button type="button" class="btn btn-secondary">
+  <%= link_to "Delete", '', method: :delete, data: { confirm: 'Are you sure?'} %>
 </button>
