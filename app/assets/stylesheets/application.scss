@@ -8,17 +8,33 @@ p{
   font-family: Garamond;
   font-size: 1.3em;
 }
+.the-nav{
+  border:solid;
+  border-radius:5px;
+  margin:10px;
+}
+
+.jumbotron{
+  border:solid;
+}
+a{
+  color:black;
+}
+a:visited{
+  color:black;
+}
+a:hover{
+  text-decoration:none;
+  color:grey;
+}
+a:active{
+  color:black;
+}
 .article-box{
   border-style:solid;
   border-radius:10px; 
   padding:10px; 
 }
-
-header{
-  padding:20px;
-}
-
-
 .site-content{
   display:block;
   padding-top:100px;
