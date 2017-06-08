@@ -39,13 +39,21 @@ a:active{
   display:block;
   padding-top:100px;
 }
+
+.new-post{
+  border:solid;
+  border-radius:5px;
+  padding:20px;
+  text-align:center;
+
+}
 .new-post input{
-  width:150px;
+  width:20%;
   border-style:double;
   border-radius:3px;
 }
 .new-post textarea{
   height:300px;
-  width:300px;
+  width:70%;
   border-radius:5px;
 }
