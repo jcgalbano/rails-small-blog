@@ -5,18 +5,17 @@
 <% @articles.each do |article|%>
   <div class='article-box'>
 
-    <strong>Title: </strong>
-    <%= article[:title]%> 
-    
-    <br>
+    <div class="post-content">
+      <strong>Title: </strong>
+      <%= article[:title]%> 
+      
+      <br>
 
-    <strong>Text: </strong>
-    <%= article[:text]%>
-
+      <strong>Text: </strong>
+      <%= article[:text]%>
+    </div>
     <br>
-    <button class="btn btn-secondary">
-      <%= link_to "View", '/articles/'+ article[:id].to_s%> 
-    </button>
+    <%= link_to "View", '/articles/'+ article[:id].to_s, :class => "action-buttons"%> 
 
   </div>
 

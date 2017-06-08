@@ -8,9 +8,6 @@
   <%= @article.text%>
 </p>
 
-<button type="button" class="btn btn-secondary">
-  <%= link_to "Edit", @article.id.to_s + "/edit/"%> 
-</button>
-<button type="button" class="btn btn-secondary">
-  <%= link_to "Delete", '', method: :delete, data: { confirm: 'Are you sure?'} %>
-</button>
+  <%= link_to "Edit", @article.id.to_s + "/edit/", :class => "action-buttons"%> 
+  <%= link_to "Delete", '', method: :delete, data: { confirm: 'Are you sure?'}, :class => "action-buttons" %>
+
