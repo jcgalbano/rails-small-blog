@@ -3,6 +3,21 @@
   <h1> Welcome to the Home Page </h1>
   <p> This file lives in /app/views/welcome.html.erb/ </p>
 </div>
-<p>
-  Fronted skills not found
-</p>
+  <div class='article-box'>
+
+    
+    <div class="post-content">
+      <div id="latest-label">
+        <h2>Latest Entry</h2>
+      </div>
+      <strong><h3><%= @article[:title]%></h3></strong>
+      <h5><%= @article[:created_at].localtime.strftime("%Y-%m-%d")%> </h5>
+      <br>
+      <%= @article[:text]%>
+    </div>
+
+    <br>
+
+  </div>
+
+
