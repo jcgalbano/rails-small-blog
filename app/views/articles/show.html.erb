@@ -1,14 +1,13 @@
 <% provide(:title, "Show Post")%>
 <p>
-  <strong>Title:</strong>
-  <%= @article.title%>
+  <strong><h3><%= @article.title%> </strong></h3>
 </p>
 
-<p>
-  <strong>Text:</strong>
-  <%= @article.text%>
-</p>
+<h5> <%= @article.created_at.localtime.strftime("%Y-%m-%d") %> </h5>
 
-  <%= link_to "Edit", @article.id.to_s + "/edit/", :class => "action-buttons"%> 
-  <%= link_to "Delete", '', method: :delete, data: { confirm: 'Are you sure?'}, :class => "action-buttons" %>
+
+<%= @article.text%>
+<br>
+<br>
+<%= link_to "Edit", @article.id.to_s + "/edit/", :class => "action-buttons"%> <%= link_to "Delete", '', method: :delete, data: { confirm: 'Are you sure?'}, :class => "action-buttons" %>
 

@@ -3,6 +3,9 @@ class ArticlesController < ApplicationController
 
   def index
     @articles = Article.all
+    
+    @cutter = CutLen.new()
+    @articles = @cutter.cut(@articles)
   end
   
   def new 

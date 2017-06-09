@@ -4,23 +4,25 @@
   <h1>Welcome to the Articles Page</h1>
   <p> This file lives in /app/views/articles/index.html.erb/</p><br>
 </div>
-<% @articles.each do |article|%>
+
+
+<% @articles.reverse.each do |article|%>
   <div class='article-box'>
 
+    
     <div class="post-content">
-      <strong>Title: </strong>
-      <%= article[:title]%> 
-      
+      <strong><h3><%= article[:title]%></h3></strong>
+      <h5><%= article[:created_at].localtime.strftime("%Y-%m-%d")%> </h5>
       <br>
-
-      <strong>Text: </strong>
       <%= article[:text]%>
     </div>
-    <br>
-    <%= link_to "View", '/articles/'+ article[:id].to_s, :class => "action-buttons"%> 
 
+    <br>
+
+    <%= link_to "View Full Post", '/articles/'+ article[:id].to_s, :class => "action-buttons"%> 
   </div>
 
-  <br><br>
+  <br>
+  <br>
 
 <%end%>
