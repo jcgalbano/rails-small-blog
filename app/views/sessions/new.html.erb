@@ -1,0 +1,33 @@
+<% provide(:title,"Login")%>
+<div class="new-post">
+
+<h1> Login Page </h1>
+
+
+    <%= form_for :session, url: login_path do |f| %>
+
+      <p>
+      <%= f.label :email %>
+      <br>
+      <%= f.email_field :email %>
+      </p>
+
+      <p>
+      <%= f.label :password %>
+      <br>
+      <%= f.password_field :password %>
+      </p> 
+
+      <p>
+      <%= f.submit "Log In"%>
+      </p>
+
+      <br>
+      <div id="new-user-prompt">
+        <p> <%= link_to "New User? Click Me!","/users/new/"%> </p>
+      </div>
+      <%= debug params %>
+
+    <%end%>
+
+</div>
