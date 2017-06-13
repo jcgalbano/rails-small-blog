@@ -1,4 +1,5 @@
 <% provide(:title, "Show Post")%>
+<strong> This file lives in app/views/articles/show.html.erb </strong>
 <p>
   <strong><h3><%= @article.title%> </strong></h3>
 </p>
@@ -9,5 +10,6 @@
 <%= @article.text%>
 <br>
 <br>
-<%= link_to "Edit", @article.id.to_s + "/edit/", :class => "action-buttons"%> <%= link_to "Delete", '', method: :delete, data: { confirm: 'Are you sure?'}, :class => "action-buttons" %>
-
+<% if logged_in? %>
+  <%= link_to "Edit", @article.id.to_s + "/edit/", :class => "action-buttons"%> <%= link_to "Delete", '', method: :delete, data: { confirm: 'Are you sure?'}, :class => "action-buttons" %>
+<% end %>

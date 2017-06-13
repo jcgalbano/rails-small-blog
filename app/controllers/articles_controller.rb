@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   protect_from_forgery with: :exception
-
+  before_action :authenticate_user!, :except => [:index,:show]
   def index
     @articles = Article.all
     

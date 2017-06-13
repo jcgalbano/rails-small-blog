@@ -2,8 +2,9 @@
 <div class="new-post">
 
 <h1> Login Page </h1>
-
-
+<strong> This file lives in app/views/sessions/new.html.erb/</strong>
+<br>
+<br>
     <%= form_for :session, url: login_path do |f| %>
 
       <p>
@@ -22,11 +23,6 @@
       <%= f.submit "Log In"%>
       </p>
 
-      <br>
-      <div id="new-user-prompt">
-        <p> <%= link_to "New User? Click Me!","/users/new/"%> </p>
-      </div>
-      <%= debug params %>
 
     <%end%>
 
